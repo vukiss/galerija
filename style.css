@@ -1,0 +1,89 @@
+body {
+	width: 960px;
+	margin-top: 20px;
+	padding: 20px;
+	background-color: white;
+	font-family: sans-serif;
+}
+
+#grid1 {
+	display: inline-grid;
+	grid-template-columns: 150px 150px 150px 150px 150px;
+	grid-auto-rows: 100px;
+	margin-top: 40px;
+	margin-left: 200px;
+	column-gap: 40px;
+	row-gap: 50px;
+}
+
+h2 {
+	margin-left: 200px;
+}
+
+#grid1 > div {
+	display: inline-grid;
+	align-items: end;
+	padding-left: 35px;
+	background: linear-gradient(to bottom, #00BFFF 80%, #FFFFFF 20%);
+	border: 1px solid #DCDCDC;
+	border-radius: 10px 10px 1px 1px;
+	box-shadow: 0 0 10px #DCDCDC;
+	
+	
+}
+
+
+
+p {
+	margin-left: 200px;
+	margin-top: 200;
+	margin-bottom: 30;
+	width: 920px;
+}
+
+#galerija {
+	display: inline-grid;
+	grid-template-columns: 150px 150px 150px 150px 150px;
+	grid-auto-rows: 100px;
+	column-gap: 40px;
+	row-gap: 50px;
+	align-items: center;
+	margin-top: -500px;
+	margin-left: 170px;
+	
+}
+
+#galerija > img {
+	display: inline-grid;
+	width: 200px;
+	padding-right: 40px;
+	padding-bottom: 160px;
+	padding-left: 5px;
+	
+}
+
+@media (min-width: 144px) {
+  #grid1 { grid-template-columns: repeat(1, 150px); }
+}
+
+@media (min-width: 600px) {
+  #grid1 { grid-template-columns: repeat(2, 150px); }
+}
+
+@media (min-width: 900px) {
+  #grid1 { grid-template-columns: repeat(3, 150px); }
+}
+
+@media (min-width: 1200px) {
+  #grid1 { grid-template-columns: repeat(5, 150px); }
+}
+	
+
+	
+
+	
+
+
+
+
+	
